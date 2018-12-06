@@ -1,7 +1,7 @@
 @import '../../styles/settings';
 
 .Hero {
-  min-height: 60vh;
+  min-height: 80vh;
 
   &__content {
     max-width: 30rem;
@@ -22,5 +22,24 @@
       background-color: transparent;
       color: color('white');
     }
+  }
+
+  &__contentful-container {
+    left: 50%;
+  }
+
+  &__frame {
+    border-radius: 25px;
+    box-shadow:
+      0 0 15px 7.5px color('white'),
+  }
+
+  &__frame-border {
+    border-left: 5px solid color('blue-grey');
+  }
+
+  &__grey-box {
+    height: 35rem;
+    background: grey;
   }
 }
