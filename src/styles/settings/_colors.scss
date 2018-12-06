@@ -1,0 +1,19 @@
+$colors: (
+  'white': #D8D8D8,
+  'black': #000,
+  'dark-blue': #192532,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: #{$color};
+  }
+
+  .bg-#{$name} {
+    background-color: #{$color};
+  }
+}
