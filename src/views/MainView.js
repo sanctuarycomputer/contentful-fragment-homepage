@@ -8,7 +8,10 @@ const MainView = ({ model }) => {
 
   return (
     <Fragment>
-      <Hero />
+      <Hero
+        headline={get(model, "fields.headline", {})}
+        subHeadline={get(model, "fields.subHeadline", {})}
+      />
     </Fragment>
   );
 };
