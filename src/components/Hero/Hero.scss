@@ -1,7 +1,19 @@
 @import '../../styles/settings';
 
 .Hero {
-  min-height: 50vh;
+  min-height: 60vh;
+
+  &__content {
+    max-width: 30rem;
+  }
+
+  &__headline {
+    font-size: 3rem;
+  }
+
+  &__sub-headline {
+    font-size: 1.5rem;
+  }
 
   &__button {
     font-size: .75rem;
