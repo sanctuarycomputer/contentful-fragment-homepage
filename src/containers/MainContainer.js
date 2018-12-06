@@ -12,7 +12,7 @@ class MainContainer extends ContainerBase {
 
   model = () => {
     return ContentfulData.getEntries({
-      content_type: 'sanctuary',
+      content_type: 'homepage',
       include: 4,
     }).then(res => res.items[0]);
   };

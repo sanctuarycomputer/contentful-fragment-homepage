@@ -1,13 +1,15 @@
 import React, { Fragment } from "react";
 import get from "utils/get";
 
+import Hero from "components/Hero";
 
 const MainView = ({ model }) => {
+  console.log(model);
   if (!model || model.isError) return <h1>Something went wrong...</h1>;
 
   return (
     <Fragment>
-      <div></div>
+      <Hero />
     </Fragment>
   );
 };
