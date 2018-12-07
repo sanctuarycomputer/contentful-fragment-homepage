@@ -29,17 +29,18 @@
   }
 
   &__frame {
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow:
-      0 0 15px 7.5px color('white'),
+      0 0 30px 15px color('glow-start'),
+      0 0 50px 30px color('glow-end')
   }
 
   &__frame-border {
-    border-left: 5px solid color('blue-grey');
+    border-left: 4px solid color('blue-grey');
   }
 
   &__grey-box {
-    height: 35rem;
+    height: 33rem;
     background: grey;
   }
 }

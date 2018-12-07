@@ -1,9 +1,14 @@
 $colors: (
-  'white': #D8D8D8,
+  'white': #fff,
+  'off-white': #D8D8D8,
   'black': #000,
   'light-blue': #8A8F94,
   'dark-blue': #192532,
   'blue-grey': #C5D2D7,
+  'glow-start': #6F7B83,
+  'glow-end': #1A2633,
+  'sidewalk-grey': #8192A6,
+  'midnight-blue': #2D2E31,
 );
 
 @function color($color-name) {
