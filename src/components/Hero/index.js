@@ -26,7 +26,7 @@ class Hero extends PureComponent {
           <div className={cx("Hero__contentful-container col-6 absolute")}>
             <div className={cx("Hero__frame bg-white my2 ml2 mr8")}>
               <h3 className={cx("Hero__frame__headline py1 pl4 text-black bold sans-serif")}>Global Settings</h3>
-              <div className={cx("p2")}>
+              <div className={cx("px2 pt1")}>
                 <div className={cx("Hero__frame-border")}>
                   <label className={cx("cf-form-label text-sidewalk-grey pl1 block mb_5 sans-serif")}>Title</label>
                   <div className={cx("pl1")}>
@@ -39,7 +39,7 @@ class Hero extends PureComponent {
                 </div>
                 <div className={cx("Hero__frame-border mt2")}>
                   <label className={cx("cf-form-label text-sidewalk-grey pl1 sans-serif")}>Pillars/Actions Menu</label>
-                  <div className={cx("Hero__grey-box ml2 mt1")}></div>
+                  <div className={cx("Hero__grey-box my1 mx1 ml2")}></div>
                 </div>
               </div>
             </div>
