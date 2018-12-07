@@ -24,7 +24,7 @@ class Hero extends PureComponent {
             </div>
           </div>
           <div className={cx("Hero__contentful-container col-6 absolute")}>
-            <div className={cx("Hero__frame bg-white p2 my2 ml4 mr6")}>
+            <div className={cx("Hero__frame bg-white p2 my2 mr8")}>
               <div className={cx("Hero__frame-border")}>
                 <label className={cx("cf-form-label text-sidewalk-grey pl1 block mb_5 sans-serif")}>Title</label>
                 <div className={cx("pl1")}>
