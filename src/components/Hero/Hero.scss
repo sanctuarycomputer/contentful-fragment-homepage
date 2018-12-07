@@ -33,7 +33,12 @@
     border-radius: 5px;
     box-shadow:
       0 0 30px 15px color('glow-start'),
-      0 0 50px 30px color('glow-end')
+      0 0 50px 30px color('glow-end');
+
+    &__headline {
+      font-size: 1.1rem;
+      border-bottom: 1px solid color('blue-grey');
+    }
   }
 
   &__frame-border {
@@ -41,7 +46,7 @@
   }
 
   &__grey-box {
-    height: 33rem;
+    height: 30rem;
     background: grey;
   }
 }

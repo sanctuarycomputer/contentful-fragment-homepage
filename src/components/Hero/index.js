@@ -24,20 +24,23 @@ class Hero extends PureComponent {
             </div>
           </div>
           <div className={cx("Hero__contentful-container col-6 absolute")}>
-            <div className={cx("Hero__frame bg-white p2 my2 mr8")}>
-              <div className={cx("Hero__frame-border")}>
-                <label className={cx("cf-form-label text-sidewalk-grey pl1 block mb_5 sans-serif")}>Title</label>
-                <div className={cx("pl1")}>
-                  <input className={cx("cf-form-input")} placeholder="Global Settings" />
+            <div className={cx("Hero__frame bg-white my2 ml2 mr8")}>
+              <h3 className={cx("Hero__frame__headline py1 pl4 text-black bold sans-serif")}>Global Settings</h3>
+              <div className={cx("p2")}>
+                <div className={cx("Hero__frame-border")}>
+                  <label className={cx("cf-form-label text-sidewalk-grey pl1 block mb_5 sans-serif")}>Title</label>
+                  <div className={cx("pl1")}>
+                    <input className={cx("cf-form-input")} placeholder="Global Settings" />
+                  </div>
+                  <div className={cx("flex justify-between pt_5 pl1")}>
+                    <p className={cx("sans-serif text-midnight-blue")}>15 Characters</p>
+                    <p className={cx("sans-serif text-midnight-blue")}> Requires less than 256 characters</p>
+                  </div>
                 </div>
-                <div className={cx("flex justify-between pt_5 pl1")}>
-                  <p className={cx("sans-serif text-midnight-blue")}>15 Characters</p>
-                  <p className={cx("sans-serif text-midnight-blue")}> Requires less than 256 characters</p>
+                <div className={cx("Hero__frame-border mt2")}>
+                  <label className={cx("cf-form-label text-sidewalk-grey pl1 sans-serif")}>Pillars/Actions Menu</label>
+                  <div className={cx("Hero__grey-box ml2 mt1")}></div>
                 </div>
-              </div>
-              <div className={cx("Hero__frame-border mt2")}>
-                <label className={cx("cf-form-label text-sidewalk-grey pl1 sans-serif")}>Pillars/Actions Menu</label>
-                <div className={cx("Hero__grey-box ml2 mt1")}></div>
               </div>
             </div>
           </div>
