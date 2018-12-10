@@ -8,7 +8,7 @@ class DetailBlock extends PureComponent {
 
   render() {
     return (
-      <div className={cx("DetailBlock flex flex-col items-center py8 px1 mb8")}>
+      <div className={cx("DetailBlock flex flex-col items-center px1 py4 mb4 lg:py8 lg:mb8")}>
         <div className={cx("DetailBlock__headline")}>
           <h3 className={cx("my3 sans-serif bold text-center text-dark-blue ")}>{this.props.headline}</h3>
         </div>

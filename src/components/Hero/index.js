@@ -13,7 +13,7 @@ class Hero extends PureComponent {
           <h2 className={cx("sans-serif text-white")}>By Sanctuary Computer in NYC</h2>
         </div>
         <div className={cx("pt4 w100 flex")}>
-          <div className={cx("col-12 lg:col-6 pt8 flex items-center flex-col justify-center")}>
+          <div className={cx("col-12 lg:col-6 lg:pt8 flex items-center flex-col justify-center")}>
             <div className={cx("Hero__content")}>
               <h3 className={cx("Hero__headline text-white sans-serif bold mb2")}>{this.props.headline}</h3>
               <h4 className={cx("Hero__sub-headline text-light-blue sans-serif mb2")}>{this.props.subHeadline}</h4>
