@@ -34,7 +34,7 @@ class Hero extends PureComponent {
                   </div>
                   <div className={cx("flex justify-between pt_5 pl1")}>
                     <p className={cx("sans-serif text-midnight-blue")}>15 Characters</p>
-                    <p className={cx("sans-serif text-midnight-blue")}> Requires less than 256 characters</p>
+                    <p className={cx("sans-serif text-midnight-blue")}>Requires less than 256 characters</p>
                   </div>
                 </div>
                 <div className={cx("Hero__frame-border mt2")}>
