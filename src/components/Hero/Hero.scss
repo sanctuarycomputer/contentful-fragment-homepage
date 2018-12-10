@@ -3,6 +3,11 @@
 .Hero {
   min-height: 92vh;
 
+  &__link:hover {
+    color: color('white');
+    text-decoration: underline;
+  }
+
   &__content {
     max-width: 30rem;
   }

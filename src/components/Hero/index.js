@@ -9,8 +9,10 @@ class Hero extends PureComponent {
     return (
       <div className={cx("Hero py2 px1 bg-dark-blue")}>
         <div className={cx("bg-dark-blue flex justify-between")}>
-          <ContentfulLogo />
-          <h2 className={cx("sans-serif text-white")}>By Sanctuary Computer in NYC</h2>
+          <a href="https://www.contentful.com/" rel="noopener noreferrer" target="_blank">
+            <ContentfulLogo />
+          </a>
+          <h2 className={cx("sans-serif text-white")}>By <a href="http://www.sanctuary.computer/" className="Hero__link text-white" rel="noopener noreferrer" target="_blank">Sanctuary Computer</a> in NYC</h2>
         </div>
         <div className={cx("pt4 w100 flex")}>
           <div className={cx("col-12 lg:col-6 lg:pt8 flex items-center flex-col justify-center")}>
