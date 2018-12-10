@@ -18,8 +18,8 @@ class Hero extends PureComponent {
               <h3 className={cx("Hero__headline text-white sans-serif bold mb2")}>{this.props.headline}</h3>
               <h4 className={cx("Hero__sub-headline text-light-blue sans-serif mb2")}>{this.props.subHeadline}</h4>
               <div className={cx("Hero__button-container flex")}>
-                <button className={cx("Hero__button cf-btn-primary col-12 md:col-6 py1 px_5")}>Start building free</button>
-                <button className={cx("Hero__button cf-btn-secondary col-12 md:col-6 py1 px_5")}>Request demo</button>
+                <button className={cx("Hero__button cf-btn-primary col-12 md:col-6 py_75 px_25")}>Start building free</button>
+                <button className={cx("Hero__button cf-btn-secondary col-12 md:col-6 py_75 px_25")}>Request demo</button>
               </div>
             </div>
           </div>
