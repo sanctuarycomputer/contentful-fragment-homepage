@@ -15,4 +15,11 @@
     max-width: 31rem;
     font-size: 1.2rem;
   }
+
+  &__button {
+    font-size: 1.25rem;
+    background-color: transparent;
+    color: color('dark-blue');
+    max-width: 30rem;
+  }
 }

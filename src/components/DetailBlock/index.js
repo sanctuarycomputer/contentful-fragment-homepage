@@ -15,6 +15,7 @@ class DetailBlock extends PureComponent {
         <div className={cx("DetailBlock__paragraph px1 sans-serif text-dark-blue bold")}>
           <Markdown src={this.props.paragraph} />
         </div>
+        <button className={cx("DetailBlock__button cf-btn-secondary px1 col-12 lg:col-6 py_75 px_25")}>Get started</button>
       </div>
     );
   }
