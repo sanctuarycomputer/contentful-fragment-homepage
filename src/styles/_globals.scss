@@ -2,10 +2,26 @@
   outline-color: color('off-white');
 }
 
+a {
+  color: inherit;
+  
+  &:hover {
+    color: inherit;
+  }
+}
+
 .cf-btn-primary {
   background: -webkit-linear-gradient(bottom, #3278C8, #2478C2);
   background: -moz-linear-gradient(bottom, #3278C8, #2478C2);
   background: -o-linear-gradient(bottom, #3278C8, #2478C2);
   background: -ms-linear-gradient(bottom, #3278C8, #2478C2);
   background: linear-gradient(to top, #3278C8, #2478C2);
+}
+
+.transition {
+  transition: all $transition;
+}
+
+.block-width {
+  max-width: 69.25rem;
 }

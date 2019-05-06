@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import get from "utils/get";
 
+import Nav from "components/Nav";
 import Hero from "components/Hero";
 import DetailBlock from "components/DetailBlock";
 
@@ -9,6 +10,7 @@ const MainView = ({ model }) => {
 
   return (
     <Fragment>
+      <Nav />
       <Hero
         headline={get(model, "fields.headline", {})}
         subHeadline={get(model, "fields.subHeadline", {})}
