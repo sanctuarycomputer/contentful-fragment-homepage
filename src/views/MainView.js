@@ -8,16 +8,18 @@ import DetailBlock from "components/DetailBlock";
 const MainView = ({ model }) => {
   if (!model || model.isError) return <h1>Something went wrong...</h1>;
 
+  const fields = get(model, 'fields', {});
+
   return (
     <Fragment>
       <Nav />
       <Hero
-        headline={get(model, "fields.headline", {})}
-        subHeadline={get(model, "fields.subHeadline", {})}
+        title={get(fields, "heroTitle", '')}
+        description={get(fields, "heroDescription", '')}
       />
       <DetailBlock
-        headline={get(model, "fields.detailHeadline", {})}
-        paragraph={get(model, "fields.paragraph", {})}
+        headline={get(model, "fields.detailHeadline", '')}
+        paragraph={get(model, "fields.paragraph", '')}
       />
     </Fragment>
   );

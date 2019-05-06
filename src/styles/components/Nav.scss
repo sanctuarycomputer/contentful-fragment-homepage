@@ -1,15 +1,13 @@
 .Nav {
   &__container {
     height: 8.875rem;
-    max-width: 81.125rem;
   }
 
-  &__logo-container {
-    width: 30%;
-    min-width:13rem;
+  &__logo {
+    width: 13rem;
 
     @include media('md-up') {
-      width: 17%;
+      width: 14rem;
     }
   }
 

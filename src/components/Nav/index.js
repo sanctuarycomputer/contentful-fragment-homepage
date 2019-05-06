@@ -6,12 +6,11 @@ class Nav extends PureComponent {
     return (
       <div className="Nav w100 px1_75 md:px4 bg-color-dark-blue">
         <div className="Nav__container mxauto flex flex-col md:flex-row items-center justify-center md:justify-between">
-          <a className="Nav__logo-container" 
-            href="https://www.contentful.com/" 
+          <a href="https://www.contentful.com/" 
             rel="noopener noreferrer" 
             target="_blank"
           >
-            <img className="w100 my_5" 
+            <img className="Nav__logo w100 my_5" 
               src="/assets/images/contentful-fragment-logo.svg" 
               alt="contentful fragment logo"
             />
