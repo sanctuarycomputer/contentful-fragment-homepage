@@ -1,6 +1,8 @@
 import React, { PureComponent } from "react";
 import cx from "classnames";
 
+import Urls from 'constants/Urls';
+
 class Hero extends PureComponent {
   render() {
     return (
@@ -12,7 +14,7 @@ class Hero extends PureComponent {
             <div className="Hero__button-container flex flex-row justify-center lg:justify-start">
               <button className="Hero__button cf-btn-primary shadow-hover px2_5 py_75 px_25">Installation</button>
               <a className="Hero__button Hero__github-button color-white shadow-hover px_75 py_75 px_25 flex flex-row items-center"
-                href="https://github.com/sanctuarycomputer/contentful-fragment"
+                href={Urls.fragmentGithub}
                 rel="noopener noreferrer" 
                 target="_blank"
               >
