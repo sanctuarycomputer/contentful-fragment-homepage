@@ -1,3 +1,9 @@
-@import 'settings', 'reset', 'globals', 'typography';
+@import 'reset';
+@import 'settings';
 @import '~basement/src/index';
+@import 'globals', 'typography';
 @import 'components';
+
+[data-whatintent='mouse'] *:focus {
+  outline: none;
+}

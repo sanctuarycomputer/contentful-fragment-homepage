@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import 'what-input';
+
 import MainContainer from 'containers/MainContainer';
 
 import "./styles/app.scss";

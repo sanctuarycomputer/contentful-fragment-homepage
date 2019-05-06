@@ -1,3 +1,7 @@
+*:focus {
+  outline-color: color('gray');
+}
+
 .cf-btn-primary {
   background: -webkit-linear-gradient(bottom, #3278C8, #2478C2);
   background: -moz-linear-gradient(bottom, #3278C8, #2478C2);
