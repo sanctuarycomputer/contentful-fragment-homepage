@@ -1,5 +1,3 @@
-@import '~basement/src/index', 'globals', 'reset';
-
-.App {
-  
-}
+@import 'settings', 'reset', 'globals', 'typography';
+@import '~basement/src/index';
+@import 'components';

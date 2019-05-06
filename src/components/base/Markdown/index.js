@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Markdown.scss';
-
 import Remarkable from 'react-remarkable';
 
 const Markdown = ({ src }) => (

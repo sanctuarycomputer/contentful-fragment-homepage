@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import cx from "classnames";
-import "./DetailBlock.scss";
 
 import Markdown from "components/base/Markdown";
 
