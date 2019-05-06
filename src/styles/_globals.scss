@@ -1,7 +1,5 @@
-@import 'settings';
-
-.sans-serif {
-  font-family: $sans-serif;
+*:focus {
+  outline-color: color('off-white');
 }
 
 .cf-btn-primary {
