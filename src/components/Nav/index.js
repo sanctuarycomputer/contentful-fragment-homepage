@@ -17,7 +17,7 @@ class Nav extends PureComponent {
               alt="contentful fragment logo"
             />
           </a>
-          <span className="block-description color-white">
+          <span className="block-description color-white text-center md:text-start">
             By
             <a className="Nav__link transition"
               href={Urls.sanctuaryComputer}
