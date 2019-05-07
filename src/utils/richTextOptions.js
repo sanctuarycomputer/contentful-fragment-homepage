@@ -7,12 +7,21 @@ import { Input } from 'components/base';
 export default (type) => {
   return {
     renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => <p className="block-description">{children}</p>,
+      [BLOCKS.PARAGRAPH]: (node, children) => {
+        switch (type) {
+          case 'blockTitleDescription':
+            return (
+              <p className="block-description BlockTitleDescription__description">{children}</p>
+            );
+          default:
+            return null;
+        }
+      },
       [BLOCKS.EMBEDDED_ENTRY]: (node) => {
         const fields = get(node, 'data.target.fields', {});
-        const { title, inputValue, copyIsAvailable } = fields;
+        const { title, inputValue, copyIsAvailable, inputIsFullWidth } = fields;
 
-        return <Input title={title} inputValue={inputValue} copyIsAvailable={copyIsAvailable} />
+        return <Input title={title} inputValue={inputValue} copyIsAvailable={copyIsAvailable} inputIsFullWidth={inputIsFullWidth} />
       },
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
         const fields = get(node, 'data.target.fields', {});

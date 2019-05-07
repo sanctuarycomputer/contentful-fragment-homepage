@@ -12,8 +12,8 @@ class Hero extends PureComponent {
             <h2 className="block-title color-white bold text-center lg:text-left mb1">{this.props.title}</h2>
             <p className="Hero__description block-description color-gray text-center lg:text-left mb2 mx_5 lg:ml0 lg:mr3">{this.props.description}</p>
             <div className="Hero__button-container flex flex-row justify-center lg:justify-start">
-              <button className="Hero__button cf-btn-primary shadow-hover px2_5 py_75 px_25">Installation</button>
-              <a className="Hero__button Hero__github-button color-white shadow-hover px_75 py_75 px_25 flex flex-row items-center"
+              <button className="Hero__button cf-btn-primary up-hover px2_5 py_75 px_25">Installation</button>
+              <a className="Hero__button Hero__github-button color-white up-hover px_75 py_75 px_25 flex flex-row items-center"
                 href={Urls.fragmentGithub}
                 rel="noopener noreferrer" 
                 target="_blank"

@@ -1,0 +1,21 @@
+.Input {
+  &__container {
+    @extend .courier;
+    font-size: 1.125rem;
+    border-radius: 0.3rem;
+    border-width: 2px;
+    height: 4rem;
+  }
+
+  &__copy-button {
+    background-color: transparent;
+  }
+
+  &__copy-icon {
+    width: 1.4rem;
+  }
+
+  &__copy-indicator--active {
+    opacity: 1;
+  }
+}

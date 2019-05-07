@@ -19,7 +19,7 @@ class BlockTitleDescription extends PureComponent {
           <div className="col-12 lg:col-4 w100">
             {!!title ? <h2 className="block-title bold mt_5 mb1">{title}</h2> : null}
           </div>
-          <div className="BlockTitleDescription__description-container col-12 lg:col-8 w100 lg:pl1">
+          <div className="col-12 lg:col-8 w100 lg:pl1">
             {documentToReactComponents(richText, richTextOptions('blockTitleDescription'))}
           </div>
         </div>
