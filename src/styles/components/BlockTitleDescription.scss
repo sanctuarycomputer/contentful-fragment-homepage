@@ -1,0 +1,14 @@
+.BlockTitleDescription {
+  &:nth-of-type(even) {
+    background-color: color('light-gray');
+  }
+
+  &__image {
+    @extend .drop-shadow;
+    border-radius: 0.3rem;
+  }
+
+  &__description-container {
+    max-width: 35rem;
+  }
+}

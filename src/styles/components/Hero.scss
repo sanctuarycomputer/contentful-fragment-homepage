@@ -44,7 +44,6 @@
     max-width: 37rem;
     height: $iframe-height-mobile;
     border-radius: 0.5rem;
-    box-shadow: 0 0 2.5rem 0 rgba(102, 102, 102, 0.5);
     transform: translate3d(0, 3.5rem, 0);
 
     @include media('lg-up') {
@@ -53,7 +52,7 @@
   }
 
   & + div {
-    margin-top: $iframe-height-mobile * 0.4;
+    margin-top: $iframe-height-mobile * 0.6;
 
     @include media('lg-up') {
       margin-top: 3.5rem;

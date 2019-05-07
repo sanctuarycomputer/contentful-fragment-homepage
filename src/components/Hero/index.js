@@ -24,7 +24,7 @@ class Hero extends PureComponent {
             </div>
           </div>
           <div className="Hero__iframe-container relative col-12 lg:col-6 flex justify-center lg:items-center">
-            <div className="Hero__iframe w100 bg-color-gray absolute"/>
+            <div className="Hero__iframe w100 bg-color-gray drop-shadow absolute"/>
           </div>
         </div>
       </div>
