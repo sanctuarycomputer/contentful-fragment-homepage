@@ -6,13 +6,7 @@ class Input extends Component {
   inputRef = React.createRef();
 
   state = {
-    inputValueIsCopied: false
-  }
-
-  componentDidMount() {
-    if (this.props.copyIsAvailable) {
-      window.addEventListener('copy', this.setInputValueCopyStatus);
-    }
+    showCopySuccessIndicator: false
   }
 
   handleCopy = () => {
@@ -27,16 +21,12 @@ class Input extends Component {
     } else if (document.selection) {
       document.selection.empty();
     };
-  }
 
-  setInputValueCopyStatus = () => {
-    navigator.clipboard.readText().then(text => {
-      if ( text === this.inputRef.current.value ) {
-        return this.setState({inputValueIsCopied: true});
-      }
+    this.setState({showCopySuccessIndicator: true});
 
-      return this.setState({inputValueIsCopied: false});
-    });
+    setTimeout(() => {
+      this.setState({showCopySuccessIndicator: false})
+    }, 1500);
   }
   
   render() {
@@ -64,7 +54,7 @@ class Input extends Component {
               />
             </button>
             <span className={cx("block-description bold color-green opacity-0 transition", {
-              'Input__copy-indicator--active': this.state.inputValueIsCopied
+              'Input__copy-indicator--active': this.state.showCopySuccessIndicator
             })}>Copied!</span>
           </Fragment>
         ) : null}
