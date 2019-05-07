@@ -5,3 +5,21 @@
 .courier {
   font-family: $courier;
 }
+
+.block-title {
+  @extend .sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.3125rem;
+  letter-spacing: -1px;
+  
+  @include media('md-up') {
+    font-size: 2.75rem;
+  }
+}
+
+.block-description {
+  @extend .sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: -0.4px;
+}

@@ -1,0 +1,11 @@
+$transition-duration: 0.2s;
+$transition-duration-short: 0.125s;
+$transition-duration-medium: 0.5s;
+$transition-duration-long: 1s;
+$transition-duration-extra-long: 1.5s;
+$transition-easing: cubic-bezier(0.25, 0.2, 0, 1);
+$transition: $transition-duration $transition-easing;
+$transition-short: $transition-duration-short $transition-easing;
+$transition-medium: $transition-duration-medium $transition-easing;
+$transition-long: $transition-duration-long $transition-easing;
+$transition-extra-long: $transition-duration-extra-long $transition-easing;
