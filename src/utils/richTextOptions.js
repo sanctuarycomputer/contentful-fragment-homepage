@@ -1,29 +1,35 @@
-import React, { PureComponent } from "react";
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import React from "react";
+import { BLOCKS } from '@contentful/rich-text-types';
 import get from "utils/get";
 
 import { Input } from 'components/base';
 
-export default (type) => {
+export default type => {
   return {
     renderNode: {
       [BLOCKS.PARAGRAPH]: (node, children) => {
         switch (type) {
           case 'blockTitleDescription':
             return (
-              <p className="block-description BlockTitleDescription__description">{children}</p>
+              <p className="block-description BlockTitleDescription__description">
+                {children}
+              </p>
             );
           default:
             return null;
         }
       },
-      [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+      [BLOCKS.EMBEDDED_ENTRY]: node => {
         const fields = get(node, 'data.target.fields', {});
-        const { title, inputValue, copyIsAvailable, inputIsFullWidth } = fields;
+        const { inputValue, copyIsAvailable } = fields;
 
-        return <Input title={title} inputValue={inputValue} copyIsAvailable={copyIsAvailable} inputIsFullWidth={inputIsFullWidth} />
+        return (
+          <Input inputValue={inputValue} 
+            copyIsAvailable={copyIsAvailable} 
+          />
+        )
       },
-      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      [BLOCKS.EMBEDDED_ASSET]: node => {
         const fields = get(node, 'data.target.fields', {});
         const url = get(fields, 'file.url', '');
         const title = get(fields, 'title', '');
