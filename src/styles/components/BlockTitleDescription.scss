@@ -3,6 +3,14 @@
     background-color: color('light-gray');
   }
 
+  &__container {
+    max-width: 35rem;
+
+    @include media('lg-up') {
+      max-width: 100%;
+    }
+  }
+
   &__image {
     @extend .drop-shadow;
     border-radius: 0.3rem;
@@ -10,5 +18,14 @@
 
   &__description {
     max-width: 35rem;
+    
+    a {
+      @extend .transition;
+      border-bottom: solid black 1px;
+      
+      &:hover {
+        border-color: transparent;
+      }
+    }
   }
 }
