@@ -2,7 +2,7 @@
 @import 'settings';
 @import 'config';
 @import '~basement/src/index';
-@import 'globals', 'typography';
+@import 'variables', 'globals', 'typography';
 @import 'components';
 
 [data-whatintent='mouse'] *:focus {
