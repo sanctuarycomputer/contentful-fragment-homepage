@@ -10,9 +10,7 @@ class Input extends Component {
   }
 
   handleCopy = () => {
-    const input = this.inputRef.current;
-
-    input.select();
+    this.inputRef.current.select();
     document.execCommand("copy");
 
     //deselect input

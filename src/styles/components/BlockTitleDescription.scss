@@ -4,11 +4,10 @@
   }
 
   &__container {
-    max-width: 35rem;
+    max-width: $block-width-md;
     
     @include media('lg-up') {
-      //.block-width
-      max-width: 74rem;
+      max-width: $block-width-lg;
     }
   }
 
