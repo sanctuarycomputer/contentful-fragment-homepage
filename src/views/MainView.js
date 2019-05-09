@@ -4,6 +4,7 @@ import get from "utils/get";
 import Nav from "components/Nav";
 import Hero from "components/Hero";
 import DetailBlock from "components/DetailBlock";
+import Footer from "components/Footer";
 
 const MainView = ({ model }) => {
   if (!model || model.isError) return <h1>Something went wrong...</h1>;
@@ -21,6 +22,7 @@ const MainView = ({ model }) => {
         headline={get(model, "fields.detailHeadline", '')}
         paragraph={get(model, "fields.paragraph", '')}
       />
+      <Footer />
     </Fragment>
   );
 };
