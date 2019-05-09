@@ -1,0 +1,31 @@
+.BlockTitleDescription {
+  &:nth-of-type(even) {
+    background-color: color('light-grey');
+  }
+
+  &__container {
+    max-width: $block-width-md;
+    
+    @include media('lg-up') {
+      max-width: $block-width-lg;
+    }
+  }
+
+  &__image {
+    @extend .drop-shadow;
+    border-radius: 0.3rem;
+  }
+
+  &__description {
+    max-width: 35rem;
+    
+    a {
+      @extend .transition;
+      border-bottom: solid black 1px;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+}

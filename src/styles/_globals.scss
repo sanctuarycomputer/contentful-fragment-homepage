@@ -11,6 +11,12 @@ a {
   }
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .cf-btn-primary {
   background: -webkit-linear-gradient(bottom, #3278C8, #2478C2);
   background: -moz-linear-gradient(bottom, #3278C8, #2478C2);
@@ -24,18 +30,21 @@ a {
 }
 
 .block-width {
-  max-width: 74rem;
+  max-width: $block-width-lg;
 }
 
-.shadow-hover {
+.up-hover {
   @extend .transition;
 
   &:hover {
     transform: translate3d(0, -0.1rem, 0);
-    box-shadow: 0 0.5rem 1rem 0 rgba(71, 71, 71, 0.3);
   }
 
   &:active {
     transform: translate3d(0, 0, 0);
   }
+}
+
+.drop-shadow {
+  box-shadow: 0 0 2.5rem 0 rgba(102, 102, 102, 0.5);
 }
