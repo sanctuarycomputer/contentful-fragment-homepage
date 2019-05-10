@@ -32,7 +32,16 @@ BlockTitleDescription.propTypes = {
       richText: PropTypes.shape({
         nodeType: PropTypes.string,
         data: PropTypes.object,
-        content: PropTypes.array
+        content: PropTypes.arrayOf(PropTypes.shape({
+          nodeType: PropTypes.string,
+          content: PropTypes.arrayOf(PropTypes.shape({
+            data: PropTypes.object,
+            marks: PropTypes.array,
+            nodeType: PropTypes.string,
+            value: PropTypes.string
+          })),
+          data: PropTypes.object
+        }))
       })
     })
   })
