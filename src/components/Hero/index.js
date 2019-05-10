@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import PropTypes from 'prop-types';
 
 import Urls from 'constants/Urls';
 
@@ -30,5 +31,15 @@ class Hero extends PureComponent {
     );
   }
 }
+
+
+Hero.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string
+};
+
+Hero.defaultProps = {
+
+};
 
 export default Hero;

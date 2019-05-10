@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from 'react';
+import PropTypes from 'prop-types';
 
 import cx from 'classnames';
 
@@ -59,6 +60,16 @@ class Input extends Component {
       </div>
     )
   }
+};
+
+Input.propTypes = {
+  inputValue: PropTypes.string, 
+  copyIsAvailable: PropTypes.bool
+};
+
+Input.defaultProps = {
+  inputValue: '',
+  copyIsAvailable: false
 };
 
 export default Input;
