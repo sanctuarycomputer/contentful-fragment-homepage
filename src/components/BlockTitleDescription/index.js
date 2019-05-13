@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import PropTypes from 'prop-types';
 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import get from "utils/get";
@@ -24,5 +25,38 @@ class BlockTitleDescription extends PureComponent {
     );
   }
 }
+
+BlockTitleDescription.propTypes = {
+  block: PropTypes.shape({
+    fields: PropTypes.shape({
+      richText: PropTypes.shape({
+        nodeType: PropTypes.string,
+        data: PropTypes.object,
+        content: PropTypes.arrayOf(PropTypes.shape({
+          nodeType: PropTypes.string,
+          content: PropTypes.arrayOf(PropTypes.shape({
+            data: PropTypes.object,
+            marks: PropTypes.array,
+            nodeType: PropTypes.string,
+            value: PropTypes.string
+          })),
+          data: PropTypes.object
+        }))
+      })
+    })
+  })
+};
+
+BlockTitleDescription.defaultProps = {
+  block: {
+    fields: {
+      richText: {
+        nodeType: '',
+        data: {},
+        content: []
+      }
+    }
+  }
+};
 
 export default BlockTitleDescription;
