@@ -1,0 +1,72 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:8-browsers
+
+jobs:
+  deploy-staging:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "yarn.lock" }}
+          - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - persist_to_workspace:
+          root: .
+          paths: .
+      - run: NODE_ENV=production CI="" yarn build
+      - run: sudo apt-get install python-dev python-pip
+      - run: sudo pip install awscli
+      - run: aws configure set preview.cloudfront true
+      - run: aws s3 sync build s3://io-contentful-fragment-staging/ --delete
+      - run: aws s3 cp build/index.html s3://io-contentful-fragment-staging/ --cache-control max-age=0
+      - run: aws cloudfront create-invalidation --distribution-id E3SHHDIMATCZ35 --paths '/*'
+
+  deploy-production:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "yarn.lock" }}
+          - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - persist_to_workspace:
+          root: .
+          paths: .
+      - run: NODE_ENV=production CI="" yarn build
+      - run: sudo apt-get install python-dev python-pip
+      - run: sudo pip install awscli
+      - run: aws configure set preview.cloudfront true
+      - run: aws s3 sync build s3://io-contentful-fragment-production/ --delete
+      - run: aws s3 cp build/index.html s3://io-contentful-fragment-production/ --cache-control max-age=0
+      - run: aws cloudfront create-invalidation --distribution-id E1R7IH9U9MECW4 --paths '/*'
+
+workflows:
+  version: 2
+  build-n-deploy:
+    jobs:
+      - deploy-staging:
+          filters:
+            branches:
+              only: staging
+      - deploy-production:
+          filters:
+            branches:
+              only: production
