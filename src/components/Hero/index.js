@@ -2,15 +2,17 @@ import React, { PureComponent } from "react";
 import PropTypes from 'prop-types';
 
 import Urls from 'constants/Urls';
+import WaveSvg from 'components/WaveSvg';
 
 class Hero extends PureComponent {
   render() {
     return (
-      <div className="Hero px1_75 lg:px4 bg-color-dark-blue flex items-center">
-        <div className="w100 mxauto block-width w100 flex flex-col lg:flex-row items-center justify-center">
-          <div className="Hero__content col-12 lg:col-6 py2 lg:pr4">
+      <div className="Hero relative px1_75 lg:px4 flex flex-col justify-center items-center">
+        <WaveSvg className="Hero__container-bottom-image absolute"/>
+        <div className="w100 mxauto block-width w100 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
+          <div className="Hero__content lg:mt2 col-12 lg:col-6 py2 lg:pr4">
             <h2 className="block-title color-white bold text-center lg:text-left mb1">{this.props.title}</h2>
-            <p className="Hero__description block-description color-grey text-center lg:text-left mb2 mx_5 lg:ml0 lg:mr3">{this.props.description}</p>
+            <p className="Hero__description block-description color-white text-center lg:text-left mb2 mx_5 lg:ml0 lg:mr3">{this.props.description}</p>
             <div className="Hero__button-container flex flex-row justify-center lg:justify-start">
               <button className="Hero__button cf-btn-primary up-hover px2_5 py_75 px_25">Installation</button>
               <a className="Hero__button Hero__github-button color-white up-hover px_75 py_75 px_25 flex flex-row items-center"
