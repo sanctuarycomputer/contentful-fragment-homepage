@@ -4,17 +4,14 @@
   }
 
   &__logo {
-    width: 13rem;
-
-    @include media('md-up') {
-      width: 14rem;
-    }
+    width: 8rem;
   }
 
 
   &__link {
     margin: 0 0.3rem;
     border-bottom: 1px solid color('white');
+    color: color('white') !important;
 
     &:hover {
       border-color: transparent;

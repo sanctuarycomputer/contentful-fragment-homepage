@@ -10,17 +10,20 @@ const MainView = ({ model }) => {
   if (!model || model.isError) return <h1>Something went wrong...</h1>;
 
   const fields = get(model, 'fields', {});
+  const contentBlocks = get(fields, 'contentBlocks', []);
 
   return (
     <Fragment>
-      <Nav />
-      <Hero
-        title={get(fields, "heroTitle", '')}
-        description={get(fields, "heroDescription", '')}
-      />
-      {get(fields, 'contentBlocks', [])
+      <div className="MainView block-background">
+        <Nav />
+        <Hero
+          title={get(fields, "heroTitle", '')}
+          description={get(fields, "heroDescription", '')}
+        />
+      </div>
+      {contentBlocks
         .map((block, i) => <BlockSwitch key={get(block, 'sys.id', i)} block={block} />)}
-      <Footer />
+      <Footer contentBlocksCount={contentBlocks.length} />
     </Fragment>
   );
 };

@@ -5,8 +5,8 @@ import Urls from 'constants/Urls';
 class Nav extends PureComponent {
   render() {
     return (
-      <div className="Nav w100 px1_75 md:px4 bg-color-dark-blue">
-        <div className="Nav__container mxauto flex flex-col md:flex-row items-center justify-center md:justify-between">
+      <div className="Nav w100 px1_75 md:px4">
+        <div className="Nav__container block-width mxauto flex flex-col md:flex-row items-center justify-center md:justify-between">
           <a href={Urls.contentful} 
             rel="noopener noreferrer" 
             target="_blank"
