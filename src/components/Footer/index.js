@@ -16,10 +16,16 @@ class Footer extends PureComponent {
         <p className="block-description color-white text-center mt4">
           by NYC based Contentful experts
         </p>
-        <img className="Footer__sc-logo w100 mt_75" 
-          src="/assets/images/sanctu-compu-logo.svg" 
-          alt="sanctuary computer logo"
-        />
+        <a 
+          href="https://www.sanctuary.computer/"
+          rel="noopener noreferrer" 
+          target="_blank"
+        >
+          <img className="Footer__sc-logo w100 mt_75" 
+            src="/assets/images/sanctu-compu-logo.svg" 
+            alt="sanctuary computer logo"
+          />
+        </a>
       </div>
     )
   }
