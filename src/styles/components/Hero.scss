@@ -1,4 +1,10 @@
 .Hero {
+  margin-bottom: 16rem;
+
+  @include media('lg-up') {
+    margin-bottom: 6rem;
+  }
+
   &__content {
     max-width: 30rem;
   }
