@@ -8,18 +8,18 @@
 
 .block-title {
   @extend .sans-serif;
-  font-size: 2.4rem;
-  line-height: 3.3125rem;
+  font-size: 1.375rem;
+  line-height: 3rem;
   letter-spacing: -1px;
   
   @include media('md-up') {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
 }
 
 .block-description {
   @extend .sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: -0.4px;
 }

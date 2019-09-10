@@ -11,11 +11,11 @@ class Hero extends PureComponent {
         <WaveSvg className="Hero__container-bottom-image absolute"/>
         <div className="w100 mxauto block-width w100 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
           <div className="Hero__content lg:mt2 col-12 lg:col-6 py2 lg:pr4">
-            <h2 className="block-title color-white bold text-center lg:text-left mb1">{this.props.title}</h2>
+            <h2 className="block-title color-white bold text-center lg:text-left mb1_5">{this.props.title}</h2>
             <p className="Hero__description block-description color-white text-center lg:text-left mb2 mx_5 lg:ml0 lg:mr3">{this.props.description}</p>
             <div className="Hero__button-container flex flex-row justify-center lg:justify-start">
-              <button className="Hero__button cf-btn-primary up-hover px2_5 py_75 px_25">Installation</button>
-              <a className="Hero__button Hero__github-button color-white up-hover px_75 py_75 px_25 flex flex-row items-center"
+              <button className="Hero__button Hero__button-primary">Installation</button>
+              <a className="Hero__button Hero__github-button color-white flex flex-row items-center"
                 href={Urls.fragmentGithub}
                 rel="noopener noreferrer" 
                 target="_blank"

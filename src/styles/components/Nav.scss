@@ -7,6 +7,10 @@
     width: 8rem;
   }
 
+  &__santu-link {
+    @extend .sans-serif;
+    font-size: 0.875rem;
+  }
 
   &__link {
     margin: 0 0.3rem;
