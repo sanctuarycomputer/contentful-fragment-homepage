@@ -20,8 +20,9 @@ class Footer extends PureComponent {
           href="https://www.sanctuary.computer/"
           rel="noopener noreferrer" 
           target="_blank"
+          className="Footer__sc-logo w100"
         >
-          <img className="Footer__sc-logo w100 mt_75" 
+          <img className="w100 mt_75" 
             src="/assets/images/sanctu-compu-logo.svg" 
             alt="sanctuary computer logo"
           />

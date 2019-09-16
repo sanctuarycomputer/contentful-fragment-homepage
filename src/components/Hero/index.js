@@ -21,7 +21,9 @@ class Hero extends PureComponent {
                 target="_blank"
               >
                 <img className="Hero__github-logo" src="/assets/images/github-logo.png" alt="github-logo"/>
+                <span className="color-white">
                 Github
+                </span>
               </a>
             </div>
           </div>
