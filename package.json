@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.2.0",
+    "@sanctucompu/basement": "^1.0.0",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "contentful": "^7.0.5",
@@ -29,8 +30,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "basement": "https://github.com/sanctuarycomputer/basement.git"
-  }
+  ]
 }
