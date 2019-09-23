@@ -1,13 +1,18 @@
 .Footer {
   height: 25rem;
+  font-size: 0.8rem;
 
   &__sc-logo {
-    max-width: 22.25rem;
+    max-width: 15rem;
   }
   
   &__container-bottom-image {
     width: 140%;
     top: -2px;
     left: -20%;
+  }
+
+  &__container {
+    flex-grow: 1;
   }
 }

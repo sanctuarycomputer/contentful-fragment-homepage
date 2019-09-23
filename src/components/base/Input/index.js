@@ -34,7 +34,7 @@ class Input extends Component {
     return (
       <div className="Input my2 flex flex-row items-center">
         <input className={cx(
-          "Input__container border-color-dark-blue px1", 
+          "Input__container border-color-blue-grey bg-color-grey-light px1", 
           {
             'Input__container--full-width': !copyIsAvailable
           })} 
