@@ -11,7 +11,7 @@ class Footer extends PureComponent {
           className="Footer__container-bottom-image absolute"
         />
         <div className="Footer__container pt8 flex flex-col items-center justify-center">
-          <p className="block-description color-white text-center">
+          <p className="sans-serif color-white text-center">
             by NYC based Contentful experts
           </p>
           <a 
