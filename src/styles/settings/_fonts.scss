@@ -1,2 +1,5 @@
-$sans-serif: "Avenir Next W01", Helvetica, sans-serif;
-$courier: "Courier New", Courier, monospace;
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+$sans-serif: "Inter", Helvetica, sans-serif;
+$inconsolata: "Inconsolata", Courier, monospace;
