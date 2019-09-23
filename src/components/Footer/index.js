@@ -4,14 +4,11 @@ import WaveSvg from 'components/WaveSvg';
 
 class Footer extends PureComponent {
   render() {
-    const { contentBlocksCount } = this.props;
-
     return (
       <div className="Footer relative w100 px1_75 md:px4 block-background flex flex-col items-center justify-center">
         <WaveSvg 
           flip={true}
           className="Footer__container-bottom-image absolute"
-          isGreyBackground={contentBlocksCount%2 === 0}
         />
         <div className="Footer__container pt8 flex flex-col items-center justify-center">
           <p className="block-description color-white text-center">
