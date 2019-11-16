@@ -12,7 +12,7 @@ class BlockTitleDescription extends PureComponent {
     const richText = get(fields, 'richText', {});
 
     return (
-      <div className="BlockTitleDescription px1_75 lg:px4 py4 flex items-center">
+      <div className="BlockTitleDescription px1_75 lg:px4 py4 flex items-center" id={title}>
         <div className="BlockTitleDescription__container w100 mxauto block-width flex flex-col lg:flex-row justify-center">
           <div className="col-12 lg:col-4 w100">
             {!!title ? <h2 className="block-title bold mt_5 mb1">{title}</h2> : null}
