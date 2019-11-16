@@ -5,6 +5,10 @@ import Urls from 'constants/Urls';
 import WaveSvg from 'components/WaveSvg';
 
 class Hero extends PureComponent {
+  jumpToInstall() {
+    document.getElementById('Installation').scrollIntoView();
+  }
+
   render() {
     return (
       <div className="Hero relative px1_75 lg:px4 flex flex-col justify-center items-center">
@@ -17,7 +21,7 @@ class Hero extends PureComponent {
             <h2 className="block-title color-white bold text-center lg:text-left mb1_5">{this.props.title}</h2>
             <p className="Hero__description block-description color-white text-center lg:text-left mb2 mx_5 lg:ml0 lg:mr3">{this.props.description}</p>
             <div className="Hero__button-container flex flex-row justify-center lg:justify-start">
-              <button className="Hero__button Hero__button-primary">Installation</button>
+              <button onClick={this.jumpToInstall} className="Hero__button Hero__button-primary">Installation</button>
               <a className="Hero__button Hero__github-button color-white flex flex-row items-center"
                 href={Urls.fragmentGithub}
                 rel="noopener noreferrer" 
@@ -32,6 +36,7 @@ class Hero extends PureComponent {
           </div>
           <div className="Hero__iframe-container relative col-12 lg:col-6 flex flex-col justify-center lg:items-center">
             <iframe 
+              title="preview"
               className="Hero__iframe w100 bg-color-light-blue-grey drop-shadow absolute l0 r0 t0 mauto"
               src="https://contentful-fragment.now.sh/dummy"
             />
