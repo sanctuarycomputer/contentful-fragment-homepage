@@ -24,7 +24,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths: .
-      - run: NODE_ENV=production PUBLIC_URL=https//staging.contentful-fragment.io CI="" yarn build
+      - run: NODE_ENV=production PUBLIC_URL=https://staging.contentful-fragment.io CI="" yarn build
       - run: sudo apt-get install python-dev python-pip
       - run: sudo pip install awscli
       - run: aws configure set preview.cloudfront true
@@ -50,7 +50,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths: .
-      - run: NODE_ENV=production PUBLIC_URL=https//www.contentful-fragment.io CI="" yarn build
+      - run: NODE_ENV=production PUBLIC_URL=https://www.contentful-fragment.io CI="" yarn build
       - run: sudo apt-get install python-dev python-pip
       - run: sudo pip install awscli
       - run: aws configure set preview.cloudfront true
