@@ -12,10 +12,6 @@ class Hero extends PureComponent {
   render() {
     return (
       <div className="Hero relative px1_75 lg:px4 flex flex-col justify-center items-center">
-        <WaveSvg 
-          className="Hero__container-bottom-image absolute"
-          isGreyBackground={true}
-        />
         <div className="w100 mxauto block-width w100 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
           <div className="Hero__content lg:mt2 col-12 lg:col-6 py2 lg:pr4">
             <h2 className="block-title color-white bold text-center lg:text-left mb1_5">{this.props.title}</h2>
