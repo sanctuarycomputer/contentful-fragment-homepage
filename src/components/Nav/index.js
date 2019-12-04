@@ -12,7 +12,7 @@ class Nav extends PureComponent {
             target="_blank"
           >
             <img className="Nav__logo w100 my_5" 
-              src="/assets/images/contentful-fragment-logo.svg" 
+              src="/assets/images/evil-contentful-fragment-logo.svg" 
               alt="contentful fragment logo"
             />
           </a>

@@ -6,11 +6,13 @@ class Footer extends PureComponent {
   render() {
     return (
       <div className="Footer relative w100 px1_75 md:px4 block-background flex flex-col items-center justify-center">
-        <WaveSvg 
-          flip={true}
-          className="Footer__container-bottom-image absolute"
-        />
-        <div className="Footer__container pt8 flex flex-col items-center justify-center">
+        <div className="Footer__container flex flex-col items-center justify-center">
+
+          <img className="Nav__icon mb2" 
+            src="/assets/images/666.svg" 
+            alt="contentful fragment logo"
+          />
+
           <p className="sans-serif color-white text-center">
             by NYC based Contentful experts
           </p>
